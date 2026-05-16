@@ -35,7 +35,6 @@ function createTree(categories, level = 0) {
 
   for (const item of categories) {
     const prefix = Array(level + 1).join("-- ");
-    console.log(prefix);
 
     html += `
       <option value="${item.id}">${prefix}${item.name}</option>
